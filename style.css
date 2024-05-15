@@ -1,0 +1,232 @@
+/* Body Styling */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  font-family: "Poppins", Arial, Helvetica, sans-serif; /* Set the font family */
+  background-color: #f5f5f5; /* Set the background color */
+  animation: fadeInAnimation ease 2s; /* Animation for fading in */
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0; /* Start with opacity 0 */
+  }
+
+  100% {
+    opacity: 1; /* End with opacity 1 */
+  }
+}
+
+/* Header Bar */
+.header {
+  height: 40vh; /* Set the height of the header */
+  background-image: url("./assets/images/background.jpg"); /* Background image */
+  background-size: cover; /* Cover the entire element with background */
+  background-color: #666; /* Fallback background color */
+  background-blend-mode: multiply; /* Blend mode for background */
+  font-weight: bolder; /* Font weight for header */
+}
+
+.header-container {
+  width: 50%; /* Set width of header container */
+  padding: 20px 0px; /* Padding for header container */
+  color: white; /* Text color */
+  margin: 0px auto; /* Center the container horizontally */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  flex-direction: row; /* Arrange elements horizontally */
+  padding-top: 150px; /* Top padding */
+}
+
+.header-container h1 {
+  font-weight: bold; /* Font weight for header */
+  font-size: 36px; /* Font size for header */
+  font-family: "Poppins", Arial, Helvetica, sans-serif; /* Font family */
+}
+
+.header-link {
+  padding-top: 25px; /* Top padding for header links */
+}
+
+.header-link a {
+  text-decoration: none; /* Remove underline from links */
+  font-size: 20px; /* Font size for links */
+  color: white; /* Text color for links */
+  font-family: "Poppins", Arial, Helvetica, sans-serif; /* Font family */
+  transition: color ease-in-out 0.5s; /* Smooth transition for color change */
+}
+
+.header-link a:hover {
+  color: #e1e1e1; /* Color change on hover */
+}
+
+/* Search Bar */
+.search-box {
+  width: 50%; /* Set width of search box */
+  margin: 0px auto; /* Center the search box horizontally */
+  background-color: #ffffff; /* Background color */
+  border-radius: 4px; /* Border radius */
+  margin-top: 2px; /* Top margin */
+  position: relative; /* Position relative for absolute positioning of elements inside */
+  box-shadow: 1px 2px #a1a1a1; /* Box shadow */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange elements horizontally */
+}
+
+.search-box input {
+  margin: 0px; /* Reset margin */
+  width: 90%; /* Set width of input */
+  padding: 15px 20px; /* Padding for input */
+  outline: none; /* Remove outline */
+  border: none; /* Remove border */
+  background-color: white; /* Background color */
+  border-radius: 4px; /* Border radius */
+  font-family: "Poppins", Arial, Helvetica, sans-serif; /* Font family */
+}
+
+.search-box button {
+  margin: 0px; /* Reset margin */
+  width: 9%; /* Set width of button */
+  padding: 15px 25px; /* Padding for button */
+  border: none; /* Remove border */
+  outline: none; /* Remove outline */
+  border-radius: 4px; /* Border radius */
+  background-color: white; /* Background color */
+}
+
+/* Main Container */
+.main {
+  background-color: #e1e1e1; /* Background color */
+  padding: 40px; /* Padding */
+  min-height: 60vh; /* Minimum height */
+}
+
+/* Watermark Area / Start Exploring Section */
+.start-exploring {
+  color: #b1b1b1; /* Text color */
+  width: 50%; /* Set width */
+  margin: 0px auto; /* Center horizontally */
+  text-align: center; /* Text alignment */
+  padding-top: 100px; /* Top padding */
+}
+
+.start-exploring span {
+  font-size: 14px; /* Font size */
+  font-weight: 600; /* Font weight */
+  padding-top: 5px; /* Top padding */
+}
+
+/* Movie Container */
+.movie-container {
+  width: 50%; /* Set width */
+  background-color: white; /* Background color */
+  padding: 20px; /* Padding */
+  margin: 0px auto; /* Center horizontally */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange elements horizontally */
+  border-radius: 5px; /* Border radius */
+  box-shadow: 1px 2px #a1a1a1; /* Box shadow */
+}
+
+.movie-poster {
+  width: 50%; /* Set width */
+}
+
+.movie-poster img {
+  width: 100%; /* Set width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px; /* Border radius */
+}
+
+.movie-details {
+  width: 100%; /* Set width */
+  padding: 0px 10px 0px 20px; /* Padding */
+  font-family: "Poppins", Arial, Helvetica, sans-serif; /* Font family */
+}
+
+.details-header {
+  width: 100%; /* Set width */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange elements horizontally */
+  justify-content: space-between; /* Space between elements */
+}
+
+.dh-ls {
+  width: 87%; /* Set width */
+}
+
+.dh-rs {
+  text-align: right; /* Text alignment */
+  width: 10%; /* Set width */
+  padding: 5px 0px 0px 0px; /* Padding */
+}
+
+.details-header h1 {
+  padding-bottom: 0px; /* Bottom padding */
+}
+
+.italics-text {
+  font-size: 15px; /* Font size */
+  color: #555; /* Text color */
+}
+
+.details-ul {
+  list-style-type: none; /* Remove list style */
+  padding-left: 0px; /* Remove left padding */
+  font-size: 15px; /* Font size */
+  margin-top: 10px; /* Top margin */
+}
+
+/* Favourite Items Container */
+.fav-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange elements horizontally */
+  flex-wrap: wrap; /* Allow wrapping */
+  width: 53%; /* Set width */
+  padding: 10px; /* Padding */
+  margin: 0px auto; /* Center horizontally */
+}
+
+.fav-item {
+  box-shadow: 1px 2px #a1a1a1; /* Box shadow */
+  margin: 0px 5px 25px 5px; /* Margin */
+  width: 28%; /* Set width */
+  padding: 10px; /* Padding */
+  background-color: white; /* Background color */
+  border-radius: 4px; /* Border radius */
+}
+
+.fav-item a {
+  text-decoration: none; /* Remove underline from links */
+  color: inherit; /* Inherit color */
+}
+
+.fav-poster img {
+  width: 100%; /* Set width */
+  border-radius: 4px; /* Border radius */
+}
+
+.fav-details-box {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange elements horizontally */
+  justify-content: space-between; /* Space between elements */
+  margin: 5px 5px 5px 0px; /* Margin */
+}
+
+.fav-movie-name {
+  color: black; /* Text color */
+  font-size: 15px; /* Font size */
+  margin-bottom: 0rem; /* Bottom margin */
+}
+
+.fav-movie-rating {
+  color: #888; /* Text color */
+  font-style: italic; /* Italics */
+  font-size: 13px; /* Font size */
+  margin-bottom: 0rem; /* Bottom margin */
+}

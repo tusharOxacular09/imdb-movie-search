@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Data -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Title -->
+    <title>IMDB Movies</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <!-- CSS and JavaScript -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/d5635d350d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header Bar -->
+    <div class="header">
+      <div class="header-container">
+        <div>
+          <!-- Heading for the search bar -->
+          <h1>Search for movies</h1>
+        </div>
+        <div class="header-link">
+          <!-- Link to the favorites page -->
+          <span><a href="favorite.html">Favorites</a></span>
+        </div>
+      </div>
+      <!-- Search Box -->
+      <div class="search-box">
+        <input
+          type="text"
+          placeholder="Type movie name here..."
+          class="search-bar"
+          id="Input"
+        />
+        <!-- Search button -->
+        <button type="submit">
+          <!-- Search icon -->
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <!-- Main Content Container -->
+    <div class="main">
+      <!-- Search Items Display Section -->
+      <div class="fav-container">
+        <!-- Items will be displayed here -->
+      </div>
+      <!-- Watermark Area / Start Exploring Section -->
+      <div class="start-exploring">
+        <!-- Film icon -->
+        <i class="fa-solid fa-film fa-6x"></i><br />
+        <!-- Text prompting users to start exploring -->
+        <span>Start Exploring!</span>
+      </div>
+    </div>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+  </body>
+</html>
